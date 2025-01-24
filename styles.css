@@ -1,0 +1,278 @@
+/* Global styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Navbar */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+/* Header */
+header {
+    margin-top: 60px;
+    padding: 30px 0; /* Reduced padding */
+    background-image: url('https://plus.unsplash.com/premium_photo-1683309565422-77818a287060?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D'); /* Corrected single image URL */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    text-align: center;
+}
+
+header .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .profile-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+
+/* About Section */
+.about {
+    background-color: #f0e6b9;
+    padding: 35px 0; /* Reduced padding */
+}
+
+.about h2 {
+    text-align: center; /* Center the title */
+    margin-bottom: 15px; /* Reduced gap */
+}
+
+.about p {
+    line-height: 1.6;
+    font-size: 18px;
+    color: #020000;
+}
+
+/* Skills Section */
+.skills {
+    padding: 30px 0; /* Reduced padding */
+    background-color: #fff;
+}
+
+.skills h2 {
+    text-align: center; /* Center the title */
+    margin-bottom: 15px; /* Reduced gap */
+}
+
+.skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill {
+    text-align: center;
+    width: 100px;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s;
+}
+
+.skill i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.skill.java {
+    background-color: #007396;
+    color: white;
+}
+
+.skill.node-js {
+    background-color: #8CC84B;
+    color: white;
+}
+
+.skill.javascript {
+    background-color: #F7DF1E;
+    color: black;
+}
+
+.skill.mysql {
+    background-color: #00618A;
+    color: white;
+}
+
+.skill.mysql {
+    background-color: #00618A;
+    color: white;
+}
+
+.skill.css {
+    background-color: #1572B6;
+    color: white;
+}
+
+.skill.html {
+    background-color: #E34F26;
+    color: white;
+}
+
+.skill:hover {
+    background-color: #ddd;
+}
+
+/* Projects Section */
+.projects {
+    padding: 40px 0; /* Reduced padding */
+    background-color: #f4f4f4;
+    background-image: url('https://img.freepik.com/free-vector/watercolor-painted-abstract-background_23-2149107118.jpg');
+}
+
+.projects h2 {
+    text-align: center; /* Center the title */
+    margin-bottom: 15px; /* Reduced gap */
+}
+
+.project {
+    margin-bottom: 15px; /* Reduced gap between projects */
+}
+
+.project h3 {
+    color: #333;
+    font-size: 24px;
+}
+
+.project p {
+    font-size: 18px;
+    color: #040000;
+}
+
+/* Education Section */
+.education {
+    padding: 45px 0; /* Reduced padding */
+    background-color: #fff;
+}
+
+.education h2 {
+    text-align: center; /* Center the title */
+    margin-bottom: 15px; /* Reduced gap */
+}
+
+.education ul {
+    list-style: none;
+    padding: 0;
+}
+
+.education li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 55px 0; /* Reduced padding */
+    background-color: #fff;
+    background-image: url('https://plus.unsplash.com/premium_vector-1718320828021-86f0dab51c05?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.contact h2 {
+    text-align: center; /* Center the title */
+    margin-bottom: 15px; /* Reduced gap */
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input,
+.contact textarea {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    color: #fdfcfc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Adds space between the text and icon */
+}
+
+.contact button i {
+    font-size: 18px; /* Adjust the size of the icon */
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+#contact h2 {
+    color: rgb(250, 15, 242);
+}
+
+#contact p {
+    color: rgb(255, 255, 255);
+}
+
+
+
